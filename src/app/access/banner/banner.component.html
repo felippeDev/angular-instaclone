@@ -1,0 +1,4 @@
+<!--<button (click)="toogleEstadoAnimacao()">Teste</button>-->
+<div class="banner-background">
+    <img *ngFor="let img of bannerImages" [src]="img.url" [@bannerAnimation]="img.state" />
+</div>
